@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Money Exchange</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+        .exchange-result {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .result-area {
+            width: 300px;
+            display: inline;
+        }
+        .row {
+            margin-left: 350px;
+            margin-top: 50px;
+            padding-bottom: 50px;
+
+        }
+        .container {
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Currency Exchange</h1>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="money-amount" class="form-label">Enter Amount</label>
+                <input type="text" id="money-amount" class="form-control" placeholder="Enter amount in USD">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Choose a Currency</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Choose a unit
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">AUD</a></li>
+                        <li><a class="dropdown-item" href="#">BGN</a></li>
+                        <li><a class="dropdown-item" href="#">BRL</a></li>
+                        <li><a class="dropdown-item" href="#">CAD</a></li>
+                        <li><a class="dropdown-item" href="#">CHF</a></li>
+                        <li><a class="dropdown-item" href="#">CNY</a></li>
+                        <li><a class="dropdown-item" href="#">CZK</a></li>
+                        <li><a class="dropdown-item" href="#">EUR</a></li>
+                        <li><a class="dropdown-item" href="#">GBP</a></li>
+                        <li><a class="dropdown-item" href="#">USD</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="exchange-result text-center">
+            <textarea class="form-control result-area">
+            </textarea>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="money.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
