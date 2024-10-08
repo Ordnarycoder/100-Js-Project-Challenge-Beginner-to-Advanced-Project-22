@@ -19,5 +19,5 @@ oReq.addEventListener("load", function () {
     });
 });
 oReq.open("GET", "https://api.freecurrencyapi.com/v1/latest");
-oReq.setRequestHeader("apikey", "fca_live_lpXFrSSejqbzLOexXddqaxMVwasxDm9BFZjdBXig");
+oReq.setRequestHeader("apikey", "Your_Api_Key");
 oReq.send();
